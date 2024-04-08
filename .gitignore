@@ -1,0 +1,9 @@
+Robotique/__pycache__/*
+Robotique/images/*
+Robotique/inutile/*
+Robotique/db/*
+Robotique/face_cascade.xml
+
+Technique_Apprentissage_AI/projetLeaf/*
+Technique_Apprentissage_AI/TP_2/data/*
+Technique_Apprentissage_AI/detection_anomalie_Cours_3/creditcard.csv

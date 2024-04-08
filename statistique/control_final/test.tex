@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+\[
+f(x) = \begin{cases}
+0 & \text{si } x < 0 \\
+x & \text{si } 0 \leq x \leq 1 \\
+1 & \text{si } x > 1
+\end{cases}
+\]
+
+**2. Valeurs de Y :**
+On définit \( Y = -\ln(X) \). Puisque \( X \) suit une loi uniforme sur [0; 1], \( \ln(X) \) est défini pour \( 0 < X \leq 1 \). Par conséquent, \( -\ln(X) \) est défini pour \( 0 < X \leq 1 \).
+L'ensemble des valeurs de \( Y \) est donc \( (0, +\infty) \).
+**3. Fonction de répartition de Y et sa densité :**
+La fonction de répartition de \( Y \), notée \( F_Y(y) \), est donnée par :
+\[ F_Y(y) = P(Y \leq y) = P(-\ln(X) \leq y) = P(\ln(X) \geq -y) \]
+En utilisant la propriété que \( \ln(X) \) est croissante, on peut écrire :
+\[ F_Y(y) = P(X \leq e^{-y}) \]
+La densité de \( Y \), notée \( f_Y(y) \), est obtenue en dérivant la fonction de répartition :
+\[ f_Y(y) = \frac{d}{dy} F_Y(y) = \frac{d}{dy} P(X \leq e^{-y}) \]
+En utilisant la densité de \( X \) (qui est constante sur [0,1]), on peut écrire :
+\[ f_Y(y) = \frac{d}{dy} (1 - e^{-y}) \]
+**4. Calcul de \(E(Y)\) et \(V(Y)\) :**
+\[ E(Y) = \int_{0}^{\infty} y \cdot f_Y(y) \,dy \]
+\[ V(Y) = E(Y^2) - [E(Y)]^2 \]
+Pour \( f_Y(y) \) obtenu à la question 3, vous pouvez utiliser ces expressions pour calculer \(E(Y)\) et \(V(Y)\). Notez que l'intégrale peut être définie sur l'intervalle (0, +∞).
+
+\end{document}
+
